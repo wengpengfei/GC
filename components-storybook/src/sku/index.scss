@@ -1,0 +1,159 @@
+$base: #1476d1;
+/* 高亮色 */
+$important: #de4040;
+
+.selected-list {
+  margin-bottom: 10px;
+  height: 36px;
+  background-color: #fafafa;
+  border: 1px solid #e6e6e6;
+  line-height: 36px;
+  padding-left: 10px;
+  position: relative;
+
+  .title {
+    display: inline-block;
+    width: 93px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .t-r:hover {
+    color: $important;
+  }
+
+  .conditions-btn {
+    display: inline-block;
+    background-color: #fff;
+    padding-left: 8px;
+    padding-right: 30px;
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #333;
+    margin-top: 5px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    position: relative;
+    vertical-align: top;
+
+    .txt {
+      color: $base;
+    }
+
+    .close-ico {
+      background-position: -94px -374px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      margin-left: 5px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+
+      .el-icon-close {
+        font-weight: bold;
+      }
+    }
+
+    &:hover {
+      border: 1px solid $base;
+      text-decoration: none;
+
+      .el-icon-close {
+        color: white;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      .close-ico {
+        background-position: -94px -389px;
+        background-color: $base;
+      }
+    }
+  }
+
+  .conditions-btn-2 {
+    padding-right: 5px;
+  }
+
+  .clear-btn {
+    display: inline-block;
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: $base;
+      text-decoration: none;
+    }
+  }
+}
+
+.m-screen {
+  position: relative;
+
+  .screen-style {
+    line-height: 48px;
+    position: relative;
+    padding-left: 110px;
+    border-bottom: 1px dotted #ddd;
+    min-height: 48px;
+
+    a {
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      display: inline-block;
+      color: #888;
+      margin-right: 10px;
+      min-width: 56px;
+      padding: 0 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: $base;
+      }
+    }
+
+    button {
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      display: inline-block;
+      color: #888;
+      margin-right: 10px;
+      min-width: 56px;
+      padding: 0 15px;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+        background-color: $base;
+      }
+    }
+
+    .current {
+      background-color: $base;
+      color: #fff;
+    }
+  }
+
+  .style-name {
+    width: 105px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+  }
+}

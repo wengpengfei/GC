@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+$important: #ff2f2f;
+$base: #2a82fe;
+/* 定位 */
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+/* 文字 */
+.fb {
+  font-weight: bold;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.to {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.cb {
+  color: $base;
+}
+
+.ci {
+  color: $important;
+}
+
+.cr {
+  color: #f00;
+}
+
+/* 隐藏 */
+.hide {
+  display: none !important;
+}
+
+/* 浮动 */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+  *zoom: 1;
+}
+
+.clear::before,
+.clear::after {
+  content: "";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* 内容垂直居中 */
+.vertical-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-middle::after {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  content: "center";
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/* 内外边距 */
+@for $i from 1 through 10 {
+  .mt#{$i * 5} {
+    margin-top: 1px * $i * 5;
+  }
+  .mr#{$i * 5} {
+    margin-right: 1px * $i * 5;
+  }
+  .mb#{$i * 5} {
+    margin-bottom: 1px * $i * 5;
+  }
+  .ml#{$i * 5} {
+    margin-left: 1px * $i * 5;
+  }
+}
+
+@for $i from 1 through 10 {
+  .pt#{$i * 5} {
+    padding-top: 1px * $i * 5;
+  }
+  .pr#{$i * 5} {
+    padding-right: 1px * $i * 5;
+  }
+  .pb#{$i * 5} {
+    padding-bottom: 1px * $i * 5;
+  }
+  .pl#{$i * 5} {
+    padding-left: 1px * $i * 5;
+  }
+}
+
+.clear {
+  clear: both;
+  *zoom: 1;
+}
+
+.clear::before,
+.clear::after {
+  content: "";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
